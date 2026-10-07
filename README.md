@@ -1,6 +1,9 @@
 # Pair Exercise 3: Functions and Classes
 
-Johnathan Baboyan
+Partners:
+
+- Johnathan Baboyan ([JKBaboyan](https://github.com/JKBaboyan))
+- Zehao Li ([parsifal12138](https://github.com/parsifal12138))
 
 The assignment implementation is in `pe3.py`.
 
