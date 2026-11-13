@@ -29,3 +29,21 @@ Expected result: **25 passed, 2 xfailed**. The two expected failures are intenti
 Verified on October 7, 2026, using Python 3.14.7 and pytest 9.1.1: **25 passed, 2 xfailed**. Additional checks verified the 180-day savings withdrawal boundary, overdraft rejection for a mature savings account, repeated checking overdraft fees, and cipher wraparound.
 
 `test_pe3.py` is the unmodified instructor-provided test file. `pytest.ini` contains the supplied settings converted from rich text to plain text, with the savings marker description corrected.
+
+## Pair Exercise 4: Concurrency
+
+Pair listing: Johnathan Baboyan and Zehao Li (`parsifal12138`).
+
+From the repository folder, using your activated Python environment:
+
+```bash
+python -m pip install wikipedia==1.4.0
+python pe4.py
+```
+
+The script searches English Wikipedia for “generative artificial intelligence.” It writes
+one reference per line into a text file named for the page title. The sequential loop
+writes to `pe4_output/sequential/` and the four-worker thread pool writes to
+`pe4_output/concurrent/`. Both timers cover downloads and file writes for the entire
+list, excluding the search and folder setup. Internet access is required, and timings
+vary with network conditions.
